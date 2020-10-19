@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link
+			href="css/projectStyle.css"
+				rel="stylesheet">
+		
+		<title> Building For Better </title>
+	<meta name="description" content="Collect fund and build house for people in poverty">
+	<meta name="keywords" content=" Building for better">		
+	<script type="text/javascript" src="js.js"></script>			
+	</head>
+	
+	<body>
+	
+		<header>
+		<!-- title -->
+			<h1> Building For Better </h1>
+			
+			<div id="content"></div>	
+		<!--navigation which should take you to the corresponding sections of the page -->
+			<nav>
+				<ul>
+						<li><a href="">What We Do</a></li> 
+						<li><a href="">Our Homes</a></li> 	
+						<li><a href="">Why We Do This</a></li> 
+						<li><a href="">Donate Here</a></li>
+				</ul>
+			</nav>
+	
+		</header>
+				
+			<section class= 'Slideshow'>
+			<!-- section where slideshow and corresponding images should go -->
+			<!-- only one image is in place for static website. Other images will have to be included that are a similar size -->
+				<article>
+					<figure>
+						<img src="images/houseSlideshow.jpg" alt="House in Construction" class="House">
+					</figure>
+				</article>
+			</section>
+			
+			
+		<!-- hr is what creates the grey break lines between sections -->	
+		<hr style="clear: both">
+			
+			<section class= 'WhatWeDo'>
+			<!-- what we do section -->
+				<article>
+					<h2> What We Do </h2>
+						<!-- image for what we do section -->
+					<p> <image src="images/family.jpg" alt="Family Smiling" class="Family">
+						Building For Better is a company which focuses on creating and providing homes for impoverished people living
+						in extreme poverty. Each house has all the necessary facilites working such as plumbing, heating, and sufficent 
+						insulation. Our homes provide a safe place for families to work and relax together, allowing people to focus on
+						one less thing. We work to help those indeed find a safe place that they can own and call their <i>'home'</i>. </p>	
+					<br>
+					<p> Each home is designed to be long lasting and durable. With multiple rooms for privacy, social, and work, Building 
+						For Better homes are here to add a sense of security and safety to those  born into disadvantaged lives. </p>
+				</article>
+			</section>
+			
+		
+		<hr style="clear: both">
+		
+			
+			<section class= 'OurHomes'>
+			<!-- Our Homes title -->
+				<h2> Our Homes </h2>
+			</section>
+			
+			<!-- symbols for Our Homes section -->
+			<div class="row">
+				<div class="column">
+					<img src="images/water.jpg" alt="Plumbing" style="width:100%">
+				</div>
+				<div class="column">
+					<img src="images/insulation.jpg" alt="Home" style="width:100%">
+				</div>
+				<div class="column">
+					<img src="images/light.jpg" alt="Electricity" style="width:100%">
+				</div>
+			</div>
+			
+			<!-- Buttons for Our Home section. When clicked, buttons should make the text below them appear and disappear -->
+			<div class="buttons">
+				<div class="order">
+					<button class="button plumbingButton">Plumbing</button>
+				</div>
+				<div class="order">
+					<button class="button insulationButton">Insulation</button>
+				</div>
+				<div class="order">
+					<button class="button electricityButton">Electricity</button>
+				</div>
+			</div>
+			
+			
+			<!-- text that should appear and disappear when buttons above are clicked  -->
+			<div class="paragraphs">	
+				<p>Building For Better provides homes with working plumbing. this is a big step for those families who
+						struggle to find clean water in wells and rivers.</p>
+			</div>
+			<div class="paragraphs">
+				<p>Building For Better provides homes with sufficent insulation. Protection from harsh elements as well as 
+						warmth from harsh elements lowers the risk of illness and provides a sense of security.</p>
+			</div>
+			<div class="paragraphs">
+				<p>Building For Better provides homes with with working electricity. This allows families to keep warm,
+						have light during night time, and cook warm, nourishing food in their own homes.</p>
+			</div>
+
+
+		<hr style="clear: both">
+	
+			<section class= 'WhyWeDoThis'>
+			<!-- Why We Do This section -->
+				<article>
+					<h2> Why We Do This </h2>
+				<!-- image for what we do section -->
+					<p> <image src="images/child.jpg" alt="Child Sitting" class="Child">
+						Building For Better is inspired by the <a href="https://www.un.org/sustainabledevelopment/sustainable-development-goals/">United Nations Sustainable Development Goals</a>,
+						specifically Goal 1 - <i>'Ending Poverty In All Its Forms Everywhere.'</i> The United Nations website
+						states that roughly 700 million people (or 10% of the world's population) is living in extreme poverty.
+						This means that individuals and families struggle to find access to basic needs such as education, food,
+						shelter, water and so much more which many people take for granted. Building For Better works to provide at
+						least some of these necessities. Furthermore, providing people homes guarantees struggling families a sense of
+						stability and safety in their tragically unstable and potentially dangerous lives.</p>
+				</article>
+			</section>
+	
+		<hr style="clear: both">
+		
+			
+			<section class= 'DonateHere'>
+			<!-- Donate Here Section -->
+			<div class="paragraphDonate">
+				<article>
+					<h2> Donate Here </h2>
+					<h3> By donating, you will be helping us to build more homes all over the world for those who need them. By donating
+						any amount, your contribution will be appreciate by many in need.</h3>
+				</article>
+			</div>
+			</section>
+			<div class="paragraphForm">		
+			<!-- form/filler for Donate Here section. details could be saved and stored somewhere else when Donate Here button is working? -->
+			<form>
+				<label for="fname">First name:</label><br>
+				<input type="text" id="fname" name="fname"><br>
+			
+				<label for="lname">Last name:</label><br>
+				<input type="text" id="lname" name="lname"><br>
+			
+			
+				<label for="email">Enter your email:</label><br>
+				<input type="email" id="email" name="email"><br>
+
+			
+				<label for="pnumber">Phone Number:</label><br>
+				<input type="number" id="pnumber" name="pnumber"><br>
+			
+				<label for="donate">Amount Donating:</label><br>
+				<input type="number" id="donate" name="donate"><br>
+			</form>
+			</div>	
+			<!-- Button for donate here section -->
+			<div class="buttons">
+					<button class="button proceedButton">Proceed</button>
+			</div>
+
+  		<footer>
+	
+	
+	
+		</footer>
+	
+	</body>
+	
+
+</html>
