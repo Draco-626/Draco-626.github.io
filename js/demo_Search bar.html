@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link
+			href="css/projectStyle.css"
+				>
+                <link href="https://cdn.bootcss.com/font-awesome/5.8.0/css/all.css" rel="stylesheet" />
+		<title> Demo_searchbart </title>
+	
+	<script type="text/javascript" src="js.js"></script>		
+	
+	</head>
+<style>
+    body{
+        background: rgb(204, 238, 255);
+    }
+    .search-box{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      background-color: rgb(204, 238, 255);
+      border-radius: 50px;
+      height: 40px;
+      padding: 10px;
+   } 
+  
+  .search-box:hover > .search-txt{
+      width: 200px;
+      padding: 0 6px;
+  }
+  
+  .search-box:hover > .search-btn{
+      background: #fff;
+  }
+  .search-btn {
+      color: rgb(172, 223, 248) ;
+      float: right;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background:white ;
+      display: flex;
+      justify-content: center;
+      align-items: center;    
+      transition: .4s;
+  }
+  .search-txt{
+      border: none;
+      background: none;
+      outline: none;
+      float: left;
+      padding: 0%;
+      color:black;
+      font-size: 16px;
+      transition: .4s;
+      line-height: 30px;
+      width: 0px;
+  }  
+  .result-txt{
+      top:50%;
+      left:50%;
+
+  }
+  
+  
+  </style>
+<div class="search-box">
+    <input class="search-txt" type="text" name="search" placeholder="Search... ex:Africa" id ="search" autocomplete="off">
+<a class="search-btn" href="#" onclick="searchBar()">
+    <i class="fas fa-search" ></i>
+</a>
+</div>
+<p class="result-txt" id="result">
+
+</p>
+<script>
+const State = [
+  {name: 'africa', url:'NIGERIA,GUINEABISSAU,SIERRALEONE,DR CONGO,RWANDA,ZAMBIA,MALAWI,MOZAMBIQUE,MADAGASCAR,LESOTHO'},
+  {name: 'asia', url:'UZBEKISTAN,TURKMENISTAAN'},
+  {name: 'latin america', url:'NA'},
+  {name: 'europe', url:'NA'},
+  {name: 'oceania',url:'NA'},
+];
+const searchInput = document.getElementById('search');//this search value entered by user
+console.log(searchInput);
+</script>
+
+</body>
+</html>

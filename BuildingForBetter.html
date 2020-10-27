@@ -7,7 +7,8 @@
 		
 		<title> Building For Better </title>
 	<meta name="description" content="Collect fund and build house for people in poverty">
-	<meta name="keywords" content=" Building for better">		
+	<meta name="keywords" content=" Building for better">
+	<link href="https://cdn.bootcss.com/font-awesome/5.8.0/css/all.css" rel="stylesheet" />		
 	<script type="text/javascript" src="js/js.js"></script>		
 		
 	</head>
@@ -17,35 +18,90 @@
 		<header>
 		<!-- title -->
 			<h1> Building For Better </h1>
+		<div class="search-box" >
+		
+		<!-- Enter differnet state and click to implement 1.Search Bar.  -->
+		<input class="search-txt" type="text" name="search" placeholder="Search State... ex:Asia" id ="search" autocomplete="off">
+			<a class="search-btn" href="#" onclick="searchBar()">
+				<i class="fas fa-search" ></i>
+			</a>
+			</div>
+			<!-- result text -->
+			<p class="result-txt" id="result">
 			
+			</p>
+			<script>
+			const State = [
+			  {name: 'africa', url:'NIGERIA,GUINEABISSAU,SIERRALEONE,DR CONGO,RWANDA,ZAMBIA,MALAWI,MOZAMBIQUE,MADAGASCAR,LESOTHO'},
+			  {name: 'asia', url:'UZBEKISTAN,TURKMENISTAAN'},
+			  {name: 'latin america', url:'NA'},
+			  {name: 'europe', url:'NA'},
+			  {name: 'oceania',url:'NA'},
+			];
+			const searchInput = document.getElementById('search');//this search value entered by user
+			
+			</script>
+
+
+
 			<div id="content"></div>	
 		<!--navigation which should take you to the corresponding sections of the page -->
 			<nav>
 				<ul>
-						<li><a href="">What We Do</a></li> 
-						<li><a href="">Our Homes</a></li> 	
-						<li><a href="">Why We Do This</a></li> 
-						<li><a href="">Donate Here</a></li>
+					
+						<li><a href="#aaa">What We Do</a></li> 
+						<li><a href="#bbb">Our Homes</a></li> 	
+						<li><a href="#ccc">Why We Do This</a></li> 
+						<li><a href="#ddd">Donate Here</a></li>
 				</ul>
+				
 			</nav>
 	
 		</header>
 				
-			<section class= 'Slideshow'>
+			<!-- Implement 4. Slideshow -->
 			<!-- section where slideshow and corresponding images should go -->
-			<!-- only one image is in place for static website. Other images will have to be included that are a similar size -->
-				<article>
-					<figure>
-						<img src="images/houseSlideshow.jpg" alt="House in Construction" class="House">
-					</figure>
-				</article>
-			</section>
-			
+			<!-- only one image is in place for static website. -->
+
+
+			<div class="slideshow-container">
+				
+				<div class="mySlides fade">
+				  <div class="numbertext"></div>
+				  <img src="images/houseSlideshow.jpg" style="width:100%">
+				  <div class="text">1 / 3</div>
+				</div>
+				
+				<div class="mySlides fade">
+				  <div class="numbertext"></div>
+				  <img src="images/family.jpg" style="width:100%">
+				  <div class="text">2 / 3</div>
+				</div>
+				
+				<div class="mySlides fade">
+				  <div class="numbertext"></div>
+				  <img src="images/child.jpg" style="width:100%">
+				  <div class="text">3 / 3</div>
+				</div>
+				
+				</div>
+				<br>
+				
+				<div style="text-align:center">
+				  <span class="dot"></span> 
+				  <span class="dot"></span> 
+				  <span class="dot"></span> 
+				</div>
+				<script>
+				var slideIndex = 0;
+				showSlides();
+				</script>
+
 			
 		<!-- hr is what creates the grey break lines between sections -->	
 		<hr style="clear: both">
 			
-			<section class= 'WhatWeDo'>
+			<section class= 'WhatWeDo' id="aaa">
 			<!-- what we do section -->
 				<article>
 					<h2> What We Do </h2>
@@ -68,9 +124,9 @@
 		<hr style="clear: both">
 		
 			
-			<section class= 'OurHomes'>
+			<section class= 'OurHomes' id="bbb">
 			<!-- Our Homes title -->
-				<h2> Our Homes </h2>
+				<h2>   Our Homes </h2>
 			</section>
 			
 			<!-- symbols for Our Homes section -->
@@ -87,38 +143,38 @@
 			</div>
 			
 			<!-- Buttons for Our Home section. When clicked, buttons should make the text below them appear and disappear -->
-			<div class="buttons">
+			<!-- Click to dispaly text -->
+			<div class="buttons" id="ccc">
 				<div class="order">
-					<button class="button plumbingButton">Plumbing</button>
+					<button type='button' onclick="toggleText()" class="button plumbingButton">Plumbing</button>
 				</div>
 				<div class="order">
-					<button class="button insulationButton">Insulation</button>
+					<button type='button' onclick="text2()" class="button insulationButton">Insulation</button>
 				</div>
 				<div class="order">
-					<button class="button electricityButton">Electricity</button>
+					<button type='button' onclick="text3()" class="button electricityButton">Electricity</button>
 				</div>
 			</div>
 			
 			
-			<!-- text that should appear and disappear when buttons above are clicked  -->
 			<div class="paragraphs">	
-				<p>Building For Better provides homes with working plumbing. this is a big step for those families who
+				<p id="demo" style="display: none;">Building For Better provides homes with working plumbing. this is a big step for those families who
 						struggle to find clean water in wells and rivers.</p>
 			</div>
 			<div class="paragraphs">
-				<p>Building For Better provides homes with sufficent insulation. Protection from harsh elements as well as 
+				<p id="demo2" style="display: none;">Building For Better provides homes with sufficent insulation. Protection from harsh elements as well as 
 						warmth from harsh elements lowers the risk of illness and provides a sense of security.</p>
 			</div>
 			<div class="paragraphs">
-				<p>Building For Better provides homes with with working electricity. This allows families to keep warm,
+				<p id="demo3" style="display: none;">Building For Better provides homes with with working electricity. This allows families to keep warm,
 						have light during night time, and cook warm, nourishing food in their own homes.</p>
 			</div>
 
 
 		<hr style="clear: both">
 	
-			<section class= 'WhyWeDoThis'>
-			<!-- Why We Do This section -->
+			<section class= 'WhyWeDoThis' id="ddd">
+				<!-- Why We Do This section -->
 				<article>
 					<h2> Why We Do This </h2>
 				<!-- image for what we do section -->
@@ -132,10 +188,51 @@
 						stability and safety in their tragically unstable and potentially dangerous lives.</p>
 				</article>
 			</section>
+
+	<hr>
+
+
+
+			<!-- Click to implement 3.Filtered content -->
+				<h2>People Live in Extreme Poverty by Country(more than 50% of the population)</h2>
+			<!-- It shows porverty countries in different  state-->			
+				<div id="myBtnContainer">
+				  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+				  <button class="btn" onclick="filterSelection('Africa')"> Africa</button>
+				  <button class="btn" onclick="filterSelection('Asia')"> Asia</button>
+				  <button class="btn" onclick="filterSelection('Latin America')"> Latin America</button>
+				  <button class="btn" onclick="filterSelection('Oceania')"> Oceania</button>
+				  <button class="btn" onclick="filterSelection('Europe')"> Europe</button>
+				</div>
+				
+				<div class="container">
+					<!--Reference: https://howmuch.net/articles/people-living-in-extreme-poverty-2018-->
+				  
+				  <div class="filterDiv Africa">GUINEABISSAU</div>
+				  <div class="filterDiv Africa">SIERRALEONE</div>
+				  <div class="filterDiv Africa">NIGERIA</div>
+				  <div class="filterDiv Africa">DR CONGO</div>
+				  <div class="filterDiv Africa">RWANDA</div>
+				  <div class="filterDiv Africa">ZAMBIA</div>
+				  <div class="filterDiv Africa">MALAWI</div>
+				  <div class="filterDiv Africa">MOZAMBIQUE</div>
+				  <div class="filterDiv Africa">MADAGASCAR</div>
+				  <div class="filterDiv Africa">LESOTHO</div>
+				
+				  <div class="filterDiv Asia">UZBEKISTAN</div>
+				  <div class="filterDiv Asia">TURKMENISTAAN</div>
+				
+				  <div class="filterDiv Latin America">N\A</div>
+				  <div class="filterDiv Oceania">N\A</div>
+				  <div class="filterDiv Europe">N\A</div>
+				 
+				
+				<script>
+				filterSelection("all")
+				</script>
+
 	
 		<hr style="clear: both">
-		
-			
 			<section class= 'DonateHere'>
 			<!-- Donate Here Section -->
 			<div class="paragraphDonate">

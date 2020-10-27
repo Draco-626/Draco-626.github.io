@@ -3,14 +3,14 @@
 body{
 	border-style: solid;
 	border-width: thick;
-	border-color: #35689a;
+	border-color: rgb(172, 223, 248);
 	}
 
 /* title of webpage */
 h1 {
 	text-align: center;
 	font-family: "Arial Black", Gadget, sans-serif;
-	color: #35689a;
+	color:  rgba(143, 205, 236, 0.767);
 	}
 	
 /* navigation css */
@@ -305,7 +305,7 @@ input[type=number]{
 .proceedButton{
 	font-size: 20px;
 	font-family: "Arial Black", Gadget, sans-serif;
-	background-color: #0D5084;
+	background-color: #1e84d3;
 	color: white;
 	border: none;
 	text-align: left;
@@ -320,10 +320,101 @@ input[type=number]{
 #myBtn {
 	font-size: 18px;
 	font-family: "Arial Black", Gadget, sans-serif;
-	background-color: #0D5084;
+	background-color: #1b7cc7;
 	color: white;
 	border: none;
 	text-align: left;
 	margin-left: 65%;
 	
 }
+
+
+/*css for filtered content*/
+.filterDiv {
+	float: left;
+	background-color: #9c0303;
+	color: #ffffff;
+	width: 100px;
+	line-height: 100px;
+	text-align: center;
+	margin: 2px;
+	display: none;
+  }
+  
+  .show {
+	display: block;
+  }
+  
+  .container {
+	margin-top: 20px;
+	overflow: hidden;
+  }
+  
+  /* Style the buttons */
+  .btn {
+	border: none;
+	outline: none;
+	padding: 12px 16px;
+	background-color: #f1f1f1;
+	cursor: pointer;
+  }
+  
+  .btn:hover {
+	background-color: #ddd;
+  }
+  
+  .btn.active {
+	background-color: #666;
+	color: white;
+  }
+
+
+
+  /*css for search bar*/
+
+  .search-box{
+    position: absolute;
+    top: 7%;
+    left: 10%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(204, 238, 255);
+    border-radius: 50px;
+    height: 40px;
+    padding: 10px;
+ } 
+
+.search-box:hover > .search-txt{
+    width: 200px;
+    padding: 0 6px;
+}
+
+.search-box:hover > .search-btn{
+    background: #fff;
+}
+.search-btn {
+    color: rgb(172, 223, 248) ;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background:white ;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    transition: .4s;
+}
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0%;
+    color:black;
+    font-size: 16px;
+    transition: .4s;
+    line-height: 30px;
+    width: 0px;
+}  
+
+
+

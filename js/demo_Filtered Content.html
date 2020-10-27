@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link
+			href="css/projectStyle.css"
+				rel="stylesheet">
+		
+		<title> Demo_Collapsible Content </title>
+	<meta name="description" content="Collect fund and build house for people in poverty">
+	<meta name="keywords" content=" Building for better">		
+	<script type="text/javascript" src="js.js"></script>		
+	<style>#more {display: none;}</style>
+	</head>
+	
+    
+<style>
+.filterDiv {
+  float: left;
+  background-color: #9c0303;
+  color: #ffffff;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+</style>
+
+
+
+
+<h2>People Live in Extreme Poverty by Country(more than 50% of the population)</h2>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('Africa')"> Africa</button>
+  <button class="btn" onclick="filterSelection('Asia')"> Asia</button>
+  <button class="btn" onclick="filterSelection('Latin America')"> Latin America</button>
+  <button class="btn" onclick="filterSelection('Oceania')"> Oceania</button>
+  <button class="btn" onclick="filterSelection('Europe')"> Europe</button>
+</div>
+
+<div class="container">
+  
+  
+  <div class="filterDiv Africa">GUINEABISSAU</div>
+  <div class="filterDiv Africa">SIERRALEONE</div>
+  <div class="filterDiv Africa">NIGERIA</div>
+  <div class="filterDiv Africa">DR CONGO</div>
+  <div class="filterDiv Africa">RWANDA</div>
+  <div class="filterDiv Africa">ZAMBIA</div>
+  <div class="filterDiv Africa">MALAWI</div>
+  <div class="filterDiv Africa">MOZAMBIQUE</div>
+  <div class="filterDiv Africa">MADAGASCAR</div>
+  <div class="filterDiv Africa">LESOTHO</div>
+
+  <div class="filterDiv Asia">UZBEKISTAN</div>
+  <div class="filterDiv Asia">TURKMENISTAAN</div>
+
+  <div class="filterDiv Latin America">N\A</div>
+  <div class="filterDiv Oceania">N\A</div>
+  <div class="filterDiv Europe">N\A</div>
+ 
+
+<script>
+filterSelection("all")
+
+</script>
+
+</body>
+</html>
+    
+
+    
